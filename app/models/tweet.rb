@@ -8,5 +8,5 @@ class Tweet < ApplicationRecord
   acts_as_votable
 
   validates :body, presence: true
-  validates :user_id, precense: true
+  validates :user_id, presence: true
 end
