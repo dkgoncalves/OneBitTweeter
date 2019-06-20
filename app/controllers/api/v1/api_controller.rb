@@ -4,6 +4,9 @@ module Api
       include Knock::Authenticable
       include CanCan::ControllerAdditions
 
+      # Permitindo que a variável current_user chegue no sereializer
+      serialization_scope :current_user
+
       # Tratando os erros
       rescue_from ActiveRecord::RecordNotFound do |msg|
         render(json: { message: msg }, status: :not_found)
