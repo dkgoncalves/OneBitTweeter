@@ -14,7 +14,7 @@ module Api
       end
 
       rescue_from CanCan::AccessDenied do |msg|
-        render(json: { message: msg}, status: :forbidden)
+        render(json: { message: msg }, status: :forbidden)
       end
     end
   end
