@@ -38,6 +38,10 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'knock', '~> 2.1', '>= 2.1.1'
 # Serializer json
 gem 'active_model_serializers'
+# Adicionando gems para incluir fotos
+gem 'carrierwave'
+gem 'carrierwave-base64'
+gem 'cloudinary'
 
 group :test do
   # Generate record based in a model
