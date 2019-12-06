@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.2'
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 0.18'
 # Use Puma as the app server
-gem 'puma', '~> 3.7'
+gem 'puma', '~> 3.12'
 
 gem 'bootsnap', '>=1.1.0', require: false
 
